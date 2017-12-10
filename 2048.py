@@ -384,7 +384,14 @@ def curses_main(stdscr, replay=False):
     keys = {curses.KEY_UP: Board.move_up, curses.KEY_DOWN: Board.move_down,
             curses.KEY_LEFT: Board.move_left,
             curses.KEY_RIGHT: Board.move_right, 113: Board.exit,
-            curses.KEY_RESIZE: Board.resize}
+            curses.KEY_RESIZE: Board.resize,
+            ord('2'): Board.move_up,
+            ord('8'): Board.move_down,
+            ord('4'):  Board.move_left,
+            ord('6'):  Board.move_right
+
+            }
+
 
     if curses.has_colors():
         if curses.COLORS != 256:
