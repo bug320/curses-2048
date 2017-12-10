@@ -29,7 +29,7 @@ def print_font(ch):
             if bit:
                 sys.stdout.write("\033[41;31m \033[0m")
             else:
-                sys.stdout.write("0")
+                sys.stdout.write(" ")
             sys.stdout.flush()
         print("")
 
